@@ -46,4 +46,19 @@ fn main() {
     let j = 'a';
     let k = '\u{9842}';
     println!("Chars: {}, {}", j, k);
+
+    
+    //COMPOUND TYPES
+
+    //TUPLES
+    let tup = ("hello", 3292);
+    let (hello_string, number) = tup;
+    let number = tup.1;
+    println!("Tuple: {:?}", tup);
+
+    //ARRAYS (fixed length | vector -> dynamic length)
+    let status_codes = [200, 201, 404];
+    let ok = status_codes[0];
+    let bytes = [0; 8];
+    println!("Arrays: {:?}, {:?}", status_codes, bytes);
 }
